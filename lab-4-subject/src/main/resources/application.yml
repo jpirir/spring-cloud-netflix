@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: dc
+server:
+  port: 8020
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8010/eureka}
+  instance:
+    preferIpAddress: true
+
+heroes: Superman,MujerMaravilla,Batman,Flash,LinternaVerde
+  

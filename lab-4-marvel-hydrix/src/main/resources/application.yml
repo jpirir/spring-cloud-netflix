@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: hydrix
+server:
+  port: 8041
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8010/eureka}
+  instance:
+    preferIpAddress: true
+
+heroes: Iron Man, Spiderman, Hulk, Balck Widow
+  

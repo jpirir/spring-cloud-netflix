@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: marvel
+server:
+  port: 8021
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8010/eureka}
+  instance:
+    preferIpAddress: true
+
+heroes: IronMan, BlackWidow, ScarlatWitch, Deadpool
+  

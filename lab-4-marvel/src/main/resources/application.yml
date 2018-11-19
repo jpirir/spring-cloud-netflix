@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: marvel-ribbon
+server:
+  port: 8030
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8010/eureka}
+  instance:
+    preferIpAddress: true
+
+heroes: Iron Man, Spiderman, Hulk, Balck Widow
+  
